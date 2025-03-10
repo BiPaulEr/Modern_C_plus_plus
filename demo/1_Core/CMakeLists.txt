@@ -17,3 +17,7 @@ add_executable(initializateur_list initializateur_list.cpp)
 add_executable(suffixes_litteraux suffixes_litteraux.cpp)
 
 add_executable(suffixes_litteraux_conversion suffixes_litteraux_conversion.cpp)
+
+add_executable(sizeof_member sizeof_member.cpp)
+
+add_executable(structured_bindings structured_bindings.cpp)
