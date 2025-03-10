@@ -20,8 +20,8 @@ int main() {
     
 	auto [a, b, c] = getValues();
 
-    std::pair<int, std::string> p = { 1, "test" };
-    auto [p1, p2] = p;
+    std::pair<int, std::string> pair = { 1, "test" };
+    auto [p1, p2] = pair;
 
     return 0;
 };
