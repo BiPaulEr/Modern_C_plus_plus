@@ -15,3 +15,5 @@ add_executable(rangeformap range_for_map.cpp)
 add_executable(initializateur_list initializateur_list.cpp)
 
 add_executable(suffixes_litteraux suffixes_litteraux.cpp)
+
+add_executable(suffixes_litteraux_conversion suffixes_litteraux_conversion.cpp)
