@@ -1,0 +1,3 @@
+add_executable(static_members_before MyClass_before.h main_before.cpp)
+
+add_executable(static_members_after MyClass_after.h main_after.cpp)
