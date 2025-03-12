@@ -23,3 +23,5 @@ add_executable(sizeof_member sizeof_member.cpp)
 add_executable(structured_bindings structured_bindings.cpp)
 
 add_subdirectory(static_members)
+
+add_executable(attributs attributes.cpp)
