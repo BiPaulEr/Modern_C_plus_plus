@@ -15,3 +15,6 @@ add_executable(tuples tuples.cpp)
 add_executable(algo_ensembliste algo_ensembliste.cpp)
 
 add_executable(chrono chrono.cpp)
+
+add_executable(random random.cpp)
+
