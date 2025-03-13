@@ -1,0 +1,5 @@
+add_executable(unordered_map unordered_map.cpp)
+
+add_executable(unordered_set unordered_set.cpp)
+
+add_executable(map_vs_unordered_map map_vs_unordered_map.cpp)
