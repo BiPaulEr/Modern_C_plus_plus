@@ -18,3 +18,6 @@ add_executable(chrono chrono.cpp)
 
 add_executable(random random.cpp)
 
+add_executable(std_function std_function.cpp)
+
+add_executable(std_mem_fn std_mem_fn.cpp)
