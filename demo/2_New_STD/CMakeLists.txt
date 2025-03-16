@@ -23,3 +23,5 @@ add_executable(std_function std_function.cpp)
 add_executable(std_mem_fn std_mem_fn.cpp)
 
 add_executable(bind_placeholders bind_placeholders.cpp)
+
+add_subdirectory(Ranges)
