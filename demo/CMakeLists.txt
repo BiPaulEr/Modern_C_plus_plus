@@ -17,6 +17,8 @@ endif()
 
 #add_subdirectory(3_Move_Semantics)
 
-add_subdirectory(4_RAII)
+#add_subdirectory(4_RAII)
+
+add_subdirectory(5_Generics)
 
 add_executable(version version.cpp)
