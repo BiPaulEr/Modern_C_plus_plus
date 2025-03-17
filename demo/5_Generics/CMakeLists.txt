@@ -1,1 +1,5 @@
 add_executable(mixins mixins.cpp)
+
+add_executable(template_specialisation template_specialisation.cpp)
+
+add_executable(template_heritance_specialisation template_heritance_specialisation.cpp)
