@@ -21,3 +21,11 @@ add_executable(concepts concepts.cpp)
 add_executable(concepts_requires concepts_requires.cpp)
 
 add_executable(crtp crtp.cpp)
+
+add_executable(extended_friends extended_friends.cpp)
+
+add_executable(variadic_template variadic_template.cpp)
+
+add_executable(pattern_matching pattern_matching.cpp)
+
+add_executable(concepts_variant_visit concepts_variant_visit.cpp)
