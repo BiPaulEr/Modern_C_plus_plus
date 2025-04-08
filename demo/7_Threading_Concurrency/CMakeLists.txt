@@ -1,1 +1,1 @@
-add_executable(dummy main.cpp)
+add_executable(thread_demo thread_demo.cpp)
