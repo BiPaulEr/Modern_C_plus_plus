@@ -19,3 +19,5 @@ add_executable(ifconstexpr ifconstexpr.cpp)
 add_executable(concepts concepts.cpp)
 
 add_executable(concepts_requires concepts_requires.cpp)
+
+add_executable(crtp crtp.cpp)
