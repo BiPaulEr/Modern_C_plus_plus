@@ -1,0 +1,1 @@
+add_executable(demo1_main main.cpp math.ixx)

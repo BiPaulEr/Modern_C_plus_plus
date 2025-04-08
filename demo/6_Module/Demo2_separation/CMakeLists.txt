@@ -1,0 +1,1 @@
+add_executable(demo2_main main.cpp math.ixx math.cppm)

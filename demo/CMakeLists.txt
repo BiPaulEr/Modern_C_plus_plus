@@ -19,6 +19,8 @@ endif()
 
 #add_subdirectory(4_RAII)
 
-add_subdirectory(5_Generics)
+#add_subdirectory(5_Generics)
+
+add_subdirectory(6_Module)
 
 add_executable(version version.cpp)
