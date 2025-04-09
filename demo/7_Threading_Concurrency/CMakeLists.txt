@@ -17,3 +17,11 @@ add_executable(launch launch.cpp)
 add_executable(deferred deferred.cpp)
 
 add_executable(promise promise.cpp)
+
+add_executable(without_mutex without_mutex.cpp)
+
+add_executable(with_mutex with_mutex.cpp)
+
+add_executable(with_guard with_guard.cpp)
+
+add_executable(with_uniquelock with_uniquelock.cpp)
