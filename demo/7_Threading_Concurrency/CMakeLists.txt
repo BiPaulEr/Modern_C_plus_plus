@@ -25,3 +25,9 @@ add_executable(with_mutex with_mutex.cpp)
 add_executable(with_guard with_guard.cpp)
 
 add_executable(with_uniquelock with_uniquelock.cpp)
+
+add_executable(with_sharedmutex with_sharedmutex.cpp)
+
+add_executable(with_timedmutex with_timedmutex.cpp)
+
+add_executable(with_recursivemutex with_recursivemutex.cpp)
