@@ -31,3 +31,11 @@ add_executable(with_sharedmutex with_sharedmutex.cpp)
 add_executable(with_timedmutex with_timedmutex.cpp)
 
 add_executable(with_recursivemutex with_recursivemutex.cpp)
+
+add_executable(atomic atomic.cpp)
+
+add_executable(latch latch.cpp)
+
+add_executable(barrier barrier.cpp)
+
+add_executable(osyncstream osyncstream.cpp)
