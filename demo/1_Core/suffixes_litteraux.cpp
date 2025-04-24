@@ -7,6 +7,10 @@ void operator"" _print(const char* texte, size_t) {
 }
 
 int main() {
+	long smallValue = 2147483648L;
+	long smallValue2 = 2147483648;
+	std::cout << "bigValue (long long): " << smallValue << std::endl;  // Correctly stores the value
+	std::cout << "bigValue (long long): " << smallValue2 << std::endl;  // Correctly stores the value
 	std::string texte = "Bonjour"s;
 	std::cout << texte << std::endl;
 
