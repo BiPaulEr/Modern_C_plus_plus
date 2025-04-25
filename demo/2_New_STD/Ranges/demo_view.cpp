@@ -21,4 +21,5 @@ int main() {
     for (int x : dropped) std::cout << x << " ";
     std::cout << "\nInverse : ";
     for (int x : reversed) std::cout << x << " ";
+
 };

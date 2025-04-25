@@ -32,11 +32,13 @@ int main() {
     f5(20, 10);  // Appelle afficher(20, 100, 10)
 
     int val = 0;
+    auto copie_ref = std::bind(incrementer, val);
+    std::cout << "apres ++ par copie : " << val << std::endl;
     auto f_ref = std::bind(incrementer, std::ref(val));
     f_ref();  // Incrémente val
-	std::cout << "Valeur de val : " << val << std::endl;
+	std::cout << "apres ++ par ref : " << val << std::endl;
     f_ref();  // Incrémente val
-    std::cout << "Valeur de val : " << val << std::endl;
+    std::cout << "affichage par const copie : " << val << std::endl;
     auto f_cref = std::bind(afficher_const, std::cref(val));
     f_cref();  // Affiche "La valeur est : 10"
 }
