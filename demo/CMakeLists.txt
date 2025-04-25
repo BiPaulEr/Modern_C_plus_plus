@@ -13,11 +13,11 @@ endif()
 
 #add_subdirectory(1_Core)
 
-add_subdirectory(2_New_STD)
+#add_subdirectory(2_New_STD)
 
 #add_subdirectory(3_Move_Semantics)
 
-#add_subdirectory(4_RAII)
+add_subdirectory(4_RAII)
 
 #add_subdirectory(5_Generics)
 

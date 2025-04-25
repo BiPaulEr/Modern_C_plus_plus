@@ -11,14 +11,22 @@ void fonction(std::shared_ptr<Ressource> ptr) {
     std::cout << "Utilisation de la ressource\n";
     std::cout << "Nombre de references dans fonction : " << ptr.use_count() << "\n";
 }
-
+void fonction_ref(std::shared_ptr<Ressource>& ptr) {
+    std::cout << "Utilisation de la ressource\n";
+    std::cout << "Nombre de references dans fonction : " << ptr.use_count() << "\n";
+}
 int main() {
     std::shared_ptr<Ressource> ptr1 = std::make_shared<Ressource>();
     std::shared_ptr<Ressource> ptr2 = ptr1; // Copie, compteur de références +1
 
     std::cout << "Nombre de references : " << ptr1.use_count() << "\n";
 
+    std::cout << "\nFonction call by value\n";
     fonction(ptr2); // Passe un shared_ptr par valeur
+    std::cout << "Nombre de references apres appel : " << ptr1.use_count() << "\n";
+
+    std::cout << "\nFonction call by ref\n";
+    fonction_ref(ptr2); // Passe un shared_ptr par ref
     std::cout << "Nombre de references apres appel : " << ptr1.use_count() << "\n";
 
 	ptr2.reset(); // Décrémente le compteur de références
