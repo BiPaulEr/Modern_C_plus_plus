@@ -18,6 +18,11 @@ int main() {
         std::cout << "Paris existe déjà dans la carte." << std::endl;
     }
 
+    std::cout << "Liste des villes et populations :\n";
+    for (const auto& [ville, nombre] : population) {
+        std::cout << ville << " => " << nombre << std::endl;
+    }
+
     std::cout << "Population de Lyon : " << population["Lyon"] << std::endl;
 
     auto it = population.find("Marseille");
@@ -27,7 +32,7 @@ int main() {
 
     it = population.find("Paris");
     if (it == population.end()) {
-        std::cout << "Paris n'a pas été trouvé." << std::endl;
+        std::cout << "Paris n'a pas ete trouve." << std::endl;
     }
 
     population.erase("Lille");
@@ -40,10 +45,10 @@ int main() {
     population.erase(population.begin(), population.end());  // Supprimer tous les éléments
 
     if (population.count("Toulouse") > 0) {
-        std::cout << "Toulouse est présente dans la carte." << std::endl;
+        std::cout << "Toulouse est presente dans la carte." << std::endl;
     }
     else {
-        std::cout << "Toulouse n'est pas présente." << std::endl;
+        std::cout << "Toulouse n'est pas presente." << std::endl;
     }
 
     std::cout << "Taille du unordered_map : " << population.size() << std::endl;
@@ -53,7 +58,7 @@ int main() {
         std::cout << pair.first << " => " << pair.second << std::endl;
     }
 
-    std::cout << "\nParcours avec itérateurs :\n";
+    std::cout << "\nParcours avec iterateurs :\n";
     for (auto it = population.begin(); it != population.end(); ++it) {
         std::cout << it->first << " => " << it->second << std::endl;
     }
@@ -62,7 +67,7 @@ int main() {
         std::cout << "Le unordered_map est vide." << std::endl;
     }
     else {
-        std::cout << "Le unordered_map n'est pas vide." << std::endl;
+        std::cout << "Le unordered_map nest pas vide." << std::endl;
     }
 
     return 0;
