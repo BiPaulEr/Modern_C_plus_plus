@@ -16,9 +16,9 @@ public:
 int main() {
     MyClass obj;
     obj.modify();   // Ok, lvalue
-    MyClass().modify();   // Erreur, rvalue
+    //MyClass().modify();   // Erreur, rvalue
 
-	obj.consume();  // Erreur, lvalue
+	//obj.consume();  // Erreur, lvalue
 	MyClass().consume();  // Ok, rvalue
     return 0;
 }
