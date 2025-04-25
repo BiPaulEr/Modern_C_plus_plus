@@ -9,3 +9,5 @@ add_executable(4_any_optional_variant 4_any_optional_variant.cpp)
 add_executable(5_unordered_map 5_unordered_map.cpp)
 
 add_executable(6_chrono 6_chrono.cpp)
+
+add_executable(7_func_mem_func 7_func_mem_func.cpp)
