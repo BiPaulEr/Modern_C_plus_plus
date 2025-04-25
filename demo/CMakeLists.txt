@@ -11,9 +11,9 @@ if (MSVC)
     add_compile_options(/Zc:__cplusplus)
 endif()
 
-add_subdirectory(1_Core)
+#add_subdirectory(1_Core)
 
-#add_subdirectory(2_New_STD)
+add_subdirectory(2_New_STD)
 
 #add_subdirectory(3_Move_Semantics)
 
