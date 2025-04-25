@@ -1,6 +1,9 @@
 #include <iostream>
 #include <functional>
-  
+
+void afficher_triple(int a, int b, int c) {
+    std::cout << "a: " << a << ", b: " << b << ", c: " << c << std::endl;
+}
 
 void afficher(int a, int b) {
     std::cout << "a: " << a << ", b: " << b << std::endl;
@@ -8,8 +11,6 @@ void afficher(int a, int b) {
 void incrementer(int& x) {
     x++;
 }
-
-
 void afficher_const(const int& x) {
     std::cout << "La valeur est : " << x << std::endl;
 }
@@ -25,6 +26,10 @@ int main() {
     f3(20, 10);  // Appelle afficher(10, 20)
     auto f4 = std::bind(afficher, std::placeholders::_1, std::placeholders::_2);
     f4(20, 10);  // Appelle afficher(20, 10)
+
+    //triple
+    auto f5 = std::bind(afficher_triple, std::placeholders::_1, 100, std::placeholders::_2);
+    f5(20, 10);  // Appelle afficher(20, 100, 10)
 
     int val = 0;
     auto f_ref = std::bind(incrementer, std::ref(val));
