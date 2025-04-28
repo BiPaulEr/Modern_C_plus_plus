@@ -1,15 +1,42 @@
-#include <concepts>
 #include <iostream>
+#include <string>
 
 template<typename T>
-concept Entier = std::is_integral_v<T>;
+class Boite;
 
-template<Entier T>
-void afficher(T x) {
-    std::cout << "C'est un entier : " << x << std::endl;
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const Boite<T>& boite);
+
+template<typename T>
+class Boite {
+private:
+    T contenu;
+
+public:
+    Boite(T c) : contenu(c) {}
+
+    friend std::ostream& operator<< <>(std::ostream& os, const Boite<T>& boite);
+	friend void afficherContenu<>(const Boite<T>& boite);
+};
+
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const Boite<T>& boite) {
+    os << "Contenu de la boite : " << boite.contenu;
+    return os;
+}
+
+template<typename T>
+void afficherContenu(const Boite<T>& boite) {
+    std::cout << "[Afficher] " << boite.contenu << std::endl;
 }
 
 int main() {
-    afficher(42);      // OK, car 42 est un entier
-    // afficher(3.14); // Erreur de compilation, 3.14 n'est pas un entier
+    Boite<int> boiteInt(42);
+    Boite<std::string> boiteString("Bonjour");
+
+    std::cout << boiteInt << std::endl;
+    std::cout << boiteString << std::endl;
+
+    afficherContenu(boiteInt);
+    afficherContenu(boiteString);
 }
